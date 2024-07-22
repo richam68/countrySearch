@@ -1,4 +1,10 @@
-.countryCard {
+.countryCard{
+  width: 20%;
+  height: 40px;
+  margin: 12px;
+  padding: 6px
+}
+.cards {
     display: grid;
     grid-template-columns: repeat(7, 1fr); /* Display 7 columns in the grid */
     gap: 1rem; /* Adjust the gap between grid items */
@@ -16,10 +22,5 @@
     display: block; /* Ensure image is block-level */
     margin: 0 auto 0.5rem; /* Center image and add space below */
   }
-  .countryCard_textInput{
-    width: 20%;
-    height: 40px;
-    margin: 12px;
-    padding: 6px
-  }
+ 
   
