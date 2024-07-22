@@ -32,18 +32,18 @@ const Home = () => {
 
   return (
     <div>
-      <input
-        type="text"
-        value={search}
-        onChange={handleChange}
-        placeholder="Search for countries..."
-        className="countryCard"
-      />
-      <br />
-      {filterData.length > 0 && (
-        <Cards flagData={search.length > 0 ? filterData : flagData} />
-      )}
+    <input
+      type="text"
+      value={search}
+      onChange={handleChange}
+      placeholder="Search for countries..."
+    />
+
+    <div className="flagBox">
+      {Boolean(filterData.length) &&
+        filterData.map((flag) => <Cards key={flag.name.common} flagData={flag} />)}
     </div>
+  </div>
   );
 };
 

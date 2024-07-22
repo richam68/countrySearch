@@ -3,14 +3,10 @@ import "./style.css";
 
 const Cards = ({ flagData }) => {
   return (
-    <div className="countryCard cards">
-      {flagData.map((flag, index) => (
-        <div className="countryCard_grid" key={index}>
-          <img src={flag.flags.png} alt="flag_image" width={50} height={50} />
-          <h4>{flag.name.common}</h4>
-        </div>
-      ))}
-    </div>
+    <div className="countryCard">
+    <img src={flagData.flags.png} alt="flag_image" width={50} height={50} />
+    <h2>{flagData.name.common}</h2>
+</div>
   );
 };
 

@@ -1,4 +1,4 @@
-.countryCard{
+/* .countryCard{
   width: 20%;
   height: 40px;
   margin: 12px;
@@ -6,21 +6,35 @@
 }
 .cards {
     display: grid;
-    grid-template-columns: repeat(7, 1fr); /* Display 7 columns in the grid */
-    gap: 1rem; /* Adjust the gap between grid items */
+    grid-template-columns: repeat(7, 1fr); 
+    gap: 1rem;
     margin: 2px;
     padding: 5px
   }
   
   .countryCard_grid {
-    text-align: center; /* Center align content */
-    padding: 1rem; /* Add padding around each card */
-    border: 1px solid #ccc; /* Optional: Add border for card */
+    text-align: center; 
+    padding: 1rem;
+    border: 1px solid #ccc; 
   }
   
   .countryCard_grid img {
-    display: block; /* Ensure image is block-level */
-    margin: 0 auto 0.5rem; /* Center image and add space below */
-  }
+    display: block; 
+    margin: 0 auto 0.5rem; 
+  } */
  
+  .flagBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+  }
   
+  .countryCard {
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+  }
